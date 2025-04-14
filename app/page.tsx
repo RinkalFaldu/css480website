@@ -6,10 +6,12 @@ import Image from 'next/image';
 export default function Home() {
   const [interests, setInterests] = useState([
     'Web Development',
-    'Artificial Intelligence',
-    'Photography',
-    'Hiking',
-    'Reading Science Fiction'
+    'UX/UI Design',
+    'Product Design',
+    'Graphic Design',
+    'Cooking',
+    'Traveling',
+    'Watching TV'
   ]);
 
   const shuffleInterests = () => {
@@ -25,7 +27,7 @@ export default function Home() {
             Hello, World!
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Welcome to my CSS 480 landing page. I'm excited to share my journey in computer science with you.
+            Welcome to my CSS 480 landing page. I'm excited to share about me. 
           </p>
         </div>
 
@@ -39,9 +41,22 @@ export default function Home() {
                   <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"></div>
                 </h2>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  I'm a passionate computer science student at the University of Washington, 
-                  driven by curiosity and creativity. I believe in the power of technology 
-                  to solve real-world problems and make a positive impact on society.
+                Hi, I’m Rinkal Faldu, a UX/UI designer, web designer, and product designer passionate about creating intuitive and meaningful digital experiences. 
+                I am currently a senior at the University of Washington Bothell, majoring in Computer Science and Software Engineering, and I am set to graduate in June 2025.
+                 My goal is to blend technology with human-centered design to develop engaging and accessible user experiences. 
+                 <br></br>
+                <br></br>
+‍
+                With a strong foundation in front-end development and UX principles, I enjoy translating complex problems into simple, elegant solutions.
+                 I am actively seeking opportunities in UX/UI design, web design, and product design, where I can apply my skills and continue learning.
+
+                 <br></br>
+                <br></br>
+
+
+                 UX/UI designer dedicated to creating intuitive and engaging user experiences. 
+                 I thrive on turning complex ideas into simple, user-friendly designs that resonate with users. 
+
                 </p>
               </div>
               <div className="relative h-[400px] group">

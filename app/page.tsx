@@ -63,9 +63,9 @@ export default function Home() {
                 <div className="absolute inset-0 rounded-2xl overflow-hidden transform transition-transform duration-500 group-hover:scale-[1.02]">
                   <Image
                     src="/Profile_Picture.jpg"
-                    alt="Coding workspace"
+                    alt="my profile picture"
                     fill
-                    className="object-cover transition-all duration-500 group-hover:brightness-110"
+                    className="object-cover transition-all duration-700 group-hover:brightness-110 w-1/2"
                     priority
                   />
                 </div>

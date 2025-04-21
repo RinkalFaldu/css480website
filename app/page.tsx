@@ -1,7 +1,9 @@
+// filepath: c:\Users\rinka\Desktop\College classes\CSS 480\css480website\app\page.tsx
 'use client';
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Navbar from './components/Navbar';
 
 export default function Home() {
   const [interests, setInterests] = useState([
@@ -20,6 +22,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-sky-50 via-white to-indigo-50">
+      <Navbar />
       <div className="max-w-4xl mx-auto px-6 py-20">
         {/* Hero Section */}
         <div className="text-center mb-20 animate-fade-in">
@@ -38,25 +41,20 @@ export default function Home() {
               <div>
                 <h2 className="text-4xl font-bold text-gray-800 mb-6 relative inline-block">
                   About Me
-                  <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"></div>
+                  <div className="absolute -bottom-1 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"></div>
                 </h2>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                Hi, I’m Rinkal Faldu, a UX/UI designer, web designer, and product designer passionate about creating intuitive and meaningful digital experiences. 
-                I am currently a senior at the University of Washington Bothell, majoring in Computer Science and Software Engineering, and I am set to graduate in June 2025.
-                 My goal is to blend technology with human-centered design to develop engaging and accessible user experiences. 
-                 <br></br>
-                <br></br>
-‍
-                With a strong foundation in front-end development and UX principles, I enjoy translating complex problems into simple, elegant solutions.
-                 I am actively seeking opportunities in UX/UI design, web design, and product design, where I can apply my skills and continue learning.
-
-                 <br></br>
-                <br></br>
-
-
-                 UX/UI designer dedicated to creating intuitive and engaging user experiences. 
-                 I thrive on turning complex ideas into simple, user-friendly designs that resonate with users. 
-
+                  Hi, I’m Rinkal Faldu, a UX/UI designer, web designer, and product designer passionate about creating intuitive and meaningful digital experiences. 
+                  I am currently a senior at the University of Washington Bothell, majoring in Computer Science and Software Engineering, and I am set to graduate in June 2025.
+                  My goal is to blend technology with human-centered design to develop engaging and accessible user experiences. 
+                  <br></br>
+                  <br></br>
+                  With a strong foundation in front-end development and UX principles, I enjoy translating complex problems into simple, elegant solutions.
+                  I am actively seeking opportunities in UX/UI design, web design, and product design, where I can apply my skills and continue learning.
+                  <br></br>
+                  <br></br>
+                  UX/UI designer dedicated to creating intuitive and engaging user experiences. 
+                  I thrive on turning complex ideas into simple, user-friendly designs that resonate with users. 
                 </p>
               </div>
               <div className="relative h-[400px] group">

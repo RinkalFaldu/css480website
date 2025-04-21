@@ -1,5 +1,8 @@
 // filepath: c:\Users\rinka\Desktop\College classes\CSS 480\css480website\app\things-to-read\page.tsx
+
+
 import Navbar from '../components/Navbar';
+import '../../styles/globals.css';
 
 export default function ThingsToRead() {
   const links = [

@@ -12,10 +12,12 @@ export default function ThingsToRead() {
     { name: 'Next.js Docs', url: 'https://nextjs.org/' },
     { name: 'Tailwind CSS', url: 'https://tailwindcss.com/' },
     { name: 'JavaScript Info', url: 'https://javascript.info/' },
-    { name: 'Frontend Mentor', url: 'https://www.frontendmentor.io/' },
-    { name: 'Smashing Magazine', url: 'https://www.smashingmagazine.com/' },
-    { name: 'CodePen', url: 'https://codepen.io/' },
-    { name: 'FreeCodeCamp', url: 'https://www.freecodecamp.org/' },
+    { name: 'Backend Developer ROadmap', url: 'https://roadmap.sh/backend' },
+    { name: 'Frontend Developer Roadmap', url: 'https://roadmap.sh/frontend' },
+    { name: 'W3schools React Tutorial', url: 'https://www.w3schools.com/REACT/DEFAULT.ASP' },
+    { name: 'UI Design Dos and Don’ts', url: 'https://developer.apple.com/design/tips/' },
+    { name: 'UX/UI Standards', url: 'https://medium.com/@chathuswijekoonuom/ui-ux-standards-ddb4ad898ccc' },
+ 
   ];
 
   return (

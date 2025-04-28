@@ -1,4 +1,3 @@
-// filepath: c:\Users\rinka\Desktop\College classes\CSS 480\css480website\app\page.tsx
 'use client';
 
 import { useState } from 'react';
@@ -21,17 +20,56 @@ export default function Home() {
     setInterests([...interests].sort(() => Math.random() - 0.5));
   };
 
+  const [showTooltip, setShowTooltip] = useState(false);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-sky-50 via-white to-indigo-50">
       <Navbar />
       <div className="max-w-4xl mx-auto px-6 py-20">
         {/* Hero Section */}
         <div className="text-center mb-20 animate-fade-in">
-          <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-            Hello, World!
-          </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Welcome to my CSS 480 landing page. I'm excited to share about me. 
+          <div className="flex justify-center items-center gap-10">
+            <h1 className="text-6xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              Hello, World!
+            </h1>
+            <button
+              className="text-lg font-bold bg-red-500 text-gray-800 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              onMouseEnter={() => setShowTooltip(true)}
+              onMouseLeave={() => setShowTooltip(false)}
+              onFocus={() => setShowTooltip(true)}
+              onBlur={() => setShowTooltip(false)}
+              aria-describedby="keyboard-access-tooltip"
+            >
+              Help
+            </button>
+          </div>
+          {showTooltip && (
+            <div
+              id="keyboard-access-tooltip"
+              className="mt-4 w-150 bg-white text-gray-800 rounded shadow-lg p-4 mx-auto"
+            >
+              <h2 className="text-lg font-bold mb-2">How to access the website using a keyboard?</h2>
+              <ul className="list-disc pl-4 text-sm">
+                <li>
+                  Use <strong>Tab</strong> to navigate through interactive elements like links and buttons.
+                </li>
+                <li>
+                  Press <strong>Enter</strong> or <strong>Space</strong> to activate a focused element.
+                </li>
+                <li>
+                  Use <strong>Shift + Tab</strong> to navigate backward.
+                </li>
+                <li>
+                  Focus indicators are visible to help you identify the currently focused element.
+                </li>
+              </ul>
+              <p className="mt-2 text-xs">
+                This website is fully accessible using keyboard follow instruction to access webiste using keyboard.
+              </p>
+            </div>
+          )}
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mt-6">
+            Welcome to my CSS 480 landing page. I'm excited to share about me.
           </p>
         </div>
 

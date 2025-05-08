@@ -31,6 +31,14 @@ body {
   color: #333;
 }
 
+.about,.interest{
+  background-color: #E4EFE7;
+  
+}
+.cards{
+  background-color:white;
+  
+}
 h1, h2, h3, h4, h5, h6 {
   margin: 2px;
   padding: 0;
@@ -63,7 +71,7 @@ button:focus {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: #ffffff;
+  background-color: #A8F1FF;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 

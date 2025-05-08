@@ -75,14 +75,14 @@ export default function Home() {
 
         {/* About Section */}
         <div className="mb-20">
-          <div className="bg-white/70 backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500">
+          <div className="about backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500">
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-4xl font-bold text-gray-800 mb-6 relative inline-block">
+              <div className="flex flex-col items-center">
+                <h2 className="text-4xl font-bold text-gray-800 mb-20 relative inline-block ">
                   About Me
                   <div className="absolute -bottom-1 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full"></div>
                 </h2>
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-lg text-gray-900 leading-relaxed mt-4 mb-6 ">
                   Hi, I’m Rinkal Faldu, a UX/UI designer, web designer, and product designer passionate about creating intuitive and meaningful digital experiences. 
                   I am currently a senior at the University of Washington Bothell, majoring in Computer Science and Software Engineering, and I am set to graduate in June 2025.
                   My goal is to blend technology with human-centered design to develop engaging and accessible user experiences. 
@@ -112,7 +112,7 @@ export default function Home() {
         </div>
 
         {/* Interests Section */}
-        <div className="bg-white/70 backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500">
+        <div className="interest backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-6 mb-10">
             <h2 className="text-4xl font-bold text-gray-800 relative inline-block">
               My Interests
@@ -133,7 +133,7 @@ export default function Home() {
             {interests.map((interest, index) => (
               <div
                 key={interest}
-                className="bg-gradient-to-br from-white to-gray-50/50 p-6 rounded-2xl shadow-md
+                className="cards from-white to-gray-50/50 p-6 rounded-2xl shadow-md
                          transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
                 style={{ animationDelay: `${index * 100}ms` }}
               >

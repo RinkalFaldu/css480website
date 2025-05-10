@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
-  color: #1e90ff;
+  color: #000000;
 }
 
 a:hover {
@@ -71,7 +71,7 @@ button:focus {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: #A8F1FF;
+  background-color: #a8f1ff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 

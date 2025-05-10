@@ -33,7 +33,7 @@ export default function Home() {
               Hello, World!
             </h1>
             <button
-              className="text-lg font-bold bg-red-500 text-gray-800 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="tooltip text-lg font-bold  text-black-800 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               onMouseEnter={() => setShowTooltip(true)}
               onMouseLeave={() => setShowTooltip(false)}
               onFocus={() => setShowTooltip(true)}

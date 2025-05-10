@@ -32,11 +32,11 @@ body {
 }
 
 .about,.interest{
-  background-color: #FFDFEF;
+  background-color: #f4d2e3;
   
 }
 .cards{
-  background-color:white;
+  background-color:#ffffff;
   
 }
 h1, h2, h3, h4, h5, h6 {
@@ -81,6 +81,9 @@ button:focus {
 
 .navbar a:focus {
   outline: 2px solid #1e90ff;
+}
+.tooltip {
+  background-color: #a066e7;
 }
 
 .footer {

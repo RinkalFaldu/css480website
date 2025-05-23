@@ -2,14 +2,22 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <nav className="navbar text-white p-4">
-      <div className="container mx-auto flex flex-row items-center justify-center gap-x-4 ">
-        <Link href="/" className="text-lg font-bold hover:underline border-4 border-purple-500 m-8 p-8">
-          Home
-        </Link>
-        <Link href="/things-to-read" className="text-lg font-bold hover:underline border-4 border-purple-500 m-8 p-8">
-          Things to Read
-        </Link>
+    <nav className="navbar">
+      <div className="navbar-content">
+        <div className="navbar-logo">
+          <span className="text-3xl font-extrabold text-blue-700 tracking-wide">MyWebsite</span>
+        </div>
+        <div className="navbar-links">
+          <Link href="/" className="nav-link">
+            <span className="tab">Home</span>
+          </Link>
+          <Link href="/things-to-read" className="nav-link">
+            <span className="tab">Things to Read</span>
+          </Link>
+          <Link href="/focus-guide" className="nav-link">
+            <span className="tab">Focus Guide</span>
+          </Link>
+        </div>
       </div>
     </nav>
   );
